@@ -43,23 +43,38 @@ const App: FC = () => {
                 handleRadioDate(e.target.value);
               }}
             >
-              <Radio value={0} className={currentCorrectIndex === 0 ? 'correct' : 'default'}>
+              <Radio
+                value={0}
+                className={currentCorrectIndex === 0 ? 'correct' : selectedAnswer === 0 ? 'wrong' : 'default'}
+              >
                 {' '}
                 {questions[currentQuestionIndex].option_0}{' '}
               </Radio>
-              <Radio value={1} className={currentCorrectIndex === 1 ? 'correct' : 'default'}>
+              <Radio
+                value={1}
+                className={currentCorrectIndex === 1 ? 'correct' : selectedAnswer === 1 ? 'wrong' : 'default'}
+              >
                 {' '}
                 {questions[currentQuestionIndex].option_1}{' '}
               </Radio>
-              <Radio value={2} className={currentCorrectIndex === 2 ? 'correct' : 'default'}>
+              <Radio
+                value={2}
+                className={currentCorrectIndex === 2 ? 'correct' : selectedAnswer === 2 ? 'wrong' : 'default'}
+              >
                 {' '}
                 {questions[currentQuestionIndex].option_2}{' '}
               </Radio>
-              <Radio value={3} className={currentCorrectIndex === 3 ? 'correct' : 'default'}>
+              <Radio
+                value={3}
+                className={currentCorrectIndex === 3 ? 'correct' : selectedAnswer === 3 ? 'wrong' : 'default'}
+              >
                 {' '}
                 {questions[currentQuestionIndex].option_3}{' '}
               </Radio>
-              <Radio value={4} className={currentCorrectIndex === 4 ? 'correct' : 'default'}>
+              <Radio
+                value={4}
+                className={currentCorrectIndex === 4 ? 'correct' : selectedAnswer === 4 ? 'wrong' : 'default'}
+              >
                 {' '}
                 {questions[currentQuestionIndex].option_4}{' '}
               </Radio>

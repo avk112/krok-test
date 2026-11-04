@@ -193,7 +193,7 @@ button {
       h1 {
         font-size: 26px;
         font-weight: 500;
-        color: $default;
+        color: $okay;
         text-shadow: 0 0 5px #000;
 
         @media screen and (orientation: portrait) {
@@ -249,9 +249,10 @@ button {
 
       h2 {
         font-size: 25px;
-        font-weight: 600;
-        color: $standardBckgrnd;
+        font-weight: 400;
+        color: $default;
         text-indent: 20px;
+        text-align: justify;
 
         @media screen and (orientation: portrait) {
           @media screen and (max-width: $notepad) {
@@ -282,10 +283,11 @@ button {
       &__radioGroup {
         position: relative;
         width: 100%;
-        display: flex;
+        display: flex !important;
 
         span {
           font-size: 20px !important;
+          font-weight: 600 !important;
 
           @media screen and (orientation: portrait) {
             @media screen and (max-width: $notepad) {
@@ -314,11 +316,17 @@ button {
         }
 
         .correct {
-          color: $success;
+          color: $default;
+          background: $success;
         }
 
         .default {
           color: $default;
+        }
+
+        .wrong {
+          color: $default;
+          background: $danger;
         }
       }
     }
@@ -330,9 +338,10 @@ button {
       background: $btnPrimary;
       padding: 15px;
       border-radius: 5px;
-      font-size: 20px;
+      font-size: 14px;
       font-weight: 500;
       line-height: 1.2;
+      text-transform: uppercase;
       color: $default;
     }
   }
