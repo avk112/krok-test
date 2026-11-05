@@ -34,7 +34,7 @@ const App: FC = () => {
 
         {questions.length ? (
           <Flex className="page__main">
-            <h2>{questions[currentQuestionIndex].question}</h2>
+            <p>{questions[currentQuestionIndex].question}</p>
             <Radio.Group
               vertical
               className="page__main__radioGroup"

@@ -247,12 +247,13 @@ button {
         }
       }
 
-      h2 {
+      p {
         font-size: 25px;
         font-weight: 400;
         color: $default;
         text-indent: 20px;
         text-align: justify;
+        line-height: 1.5;
 
         @media screen and (orientation: portrait) {
           @media screen and (max-width: $notepad) {
@@ -265,7 +266,6 @@ button {
 
           @media screen and (max-width: $mobile) {
             font-size: 14px;
-            line-height: 1;
           }
         }
 
