@@ -36,6 +36,7 @@ const App: FC = () => {
           <Flex className="page__main">
             <p>{questions[currentQuestionIndex].question}</p>
             <Radio.Group
+              key={currentCorrectIndex}
               vertical
               className="page__main__radioGroup"
               value={selectedAnswer}
